@@ -65,7 +65,7 @@ impl SpinLock {
 
 图 4-1 展示了使用 `SpinLock` 来保护对一些共享数据的访问情况，其中两个线程同时尝试获取锁。请注意，第一个线程上的解锁操作与第二个线程上的锁定操作形成 happens-before 关系，这确保了线程不能并发地访问数据。
 
-![ ](https://github.com/rustcc/Rust_Atomics_and_Locks/raw/main/picture/raal_0401.png)
+![ ](https://github.com/DestinyL/Rust_Atomics_and_Locks/blob/main/picture/raal_0401.png)
 图 4-1。在使用 `SpinLock` 保护对某些共享数据访问的两个线程之间的 happens-before 关系。
 
 ## 一个不安全的自旋锁
